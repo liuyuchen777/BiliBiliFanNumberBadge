@@ -42,7 +42,3 @@ def index():
 def bilibili_fans(uid: str):
     status_code, fanscount, message = get_bilibili_fans_count(uid)
     return {'status' : status_code, "message":message, "data" : { "value" : fanscount}}
-
-
-if __name__ == '__main__':
-    uvicorn.run(app=app, host="0.0.0.0", port=40001)
