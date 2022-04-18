@@ -1,1 +1,1 @@
-web: gunicorn getFanNumber:app
+web: uvicorn getFanNumber:app --host=0.0.0.0 --port=${PORT:-5000}
