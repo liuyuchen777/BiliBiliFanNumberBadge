@@ -1,6 +1,4 @@
-import uvicorn as uvicorn
 from fastapi import FastAPI
-import re
 import requests
 import json
 
